@@ -37,11 +37,11 @@ class JoinApplicationForm(forms.ModelForm):
     cs_background = forms.CharField(label='Technical knowledge',
                                     help_text="Experience in computer science. It's okay to leave this blank "
                                               "if you are new to Computer Science", required=False,
-                                    widget=forms.Textarea(attrs={'placeholder': 'example: I studied C++ in my School.' +
+                                    widget=forms.Textarea(attrs={'placeholder': 'Example: I studied C++ in my School.' +
                                                                                 ' I have made a game using Python.'}))
 
     interests = forms.CharField(label='Interests', help_text="Write about your interests, passions and hobbies",
-                                widget=forms.Textarea(attrs={'placeholder': 'example: I love reading books.'}))
+                                widget=forms.Textarea(attrs={'placeholder': 'Example: I love reading books.'}))
 
     contribution = forms.CharField(label='Contribution',
                                    help_text="How would you like to contribute to the growth of the club?",
